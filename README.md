@@ -10,4 +10,4 @@ This is a demo project for representing a basic Kafka environment in Kotlin Spri
 1. Hit build button. (There are no additional settings needed to compile the project.)
 2. Run docker-compose.yaml file.
 3. Start the Spring Boot application.
-4. Send some message to the endpoints, defined in the KafkaController class.
+4. Send some messages to the endpoint, defined in the KafkaController class.
