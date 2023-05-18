@@ -9,7 +9,9 @@ class KafkaProducer @Autowired constructor(private val kafkaTemplate: KafkaTempl
 
     fun sendMessage(topic: String, message: String) {
         kafkaTemplate.send(topic, message)
-        println("THE FOLLOWING MESSAGE WAS SENT TO TOPIC '$topic': $message")
+        println("THE FOLLOWING MESSAGE WAS SENT:\n" +
+                "- topic: $topic\n" +
+                "- message: $message")
     }
 
 }
